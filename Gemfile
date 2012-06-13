@@ -3,18 +3,22 @@ source 'https://rubygems.org'
 #ruby '1.9.3'
 
 gem 'rails', '3.2.4.rc1'
+gem 'bootstrap-sass','2.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', '1.3.5', :group => [:development, :test]
+#gem 'sqlite3', '1.3.5', :group => [:development, :test]
+
+gem 'pg', :group => [:development, :test, :production]
 group :production do
       gem 'thin'
       gem 'pg'
 end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.5'
+ #gem 'sqlite3', '1.3.5'
+  gem 'pg' 
   gem 'rspec-rails', '2.10.0'
 end
 
