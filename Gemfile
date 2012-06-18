@@ -19,7 +19,7 @@ end
 group :development, :test do
  #gem 'sqlite3', '1.3.5'
   gem 'pg' 
-  gem 'rspec-rails', '2.10.0'
+  gem 'rspec-rails', '2.10.1'
 end
 
 group :test do
