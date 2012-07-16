@@ -1,26 +1,27 @@
 development:
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: sample_app_development
   pool: 5
-  username: 
+  username: user1
   password:
+  host: localhost
 
-test: &TEST
+test:
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: sample_app_test
   pool: 5
-  username: 
+  username: user1
   password:
+  host: localhost
 
 production:
   adapter: postgresql
-  encoding: utf8
+  encoding: unicode
   database: sample_app_production
   pool: 5
-  username: 
+  username: user1
   password:
+  host: localhost
 
-cucumber:
-  <<: *TEST
