@@ -161,7 +161,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.2)
   factory_girl_rails (= 1.4.0)
   jquery-rails (= 2.0.0)
-  pg (= 0.9.0)
+  pg
   rails (= 3.2.4.rc1)
   rspec-rails (= 2.10.1)
   sass-rails (~> 3.2.4)
