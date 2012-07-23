@@ -11,9 +11,10 @@ gem 'bcrypt-ruby', '3.0.1'
 
 #gem 'sqlite3', '1.3.5', :group => [:development, :test]
 
-gem 'pg', '0.10.0', :group => [:development, :test, :production]
+gem 'pg', '0.11.0', :group => [:development, :test, :production]
 group :production do
       gem 'thin'
+      #gem 'activerecord-postgresql-adapter'
 end
 
 group :development, :test do
