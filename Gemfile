@@ -11,21 +11,19 @@ gem 'bcrypt-ruby', '3.0.1'
 
 #gem 'sqlite3', '1.3.5', :group => [:development, :test]
 
+gem 'pg', :group => [:development, :test, :production]
 group :production do
       gem 'thin'
-      gem 'pg', '0.9.0'
 end
 
 group :development, :test do
  #gem 'sqlite3', '1.3.5'
-  gem 'pg' , '0.9.0'
   gem 'rspec-rails', '2.10.1'
 end
 
 gem 'annotate', '~> 2.4.1.beta', group: :development
 
 group :test do
-  gem 'pg', '0.9.0'
   gem 'capybara', '1.1.2'
   gem 'factory_girl_rails', '1.4.0'
 end
