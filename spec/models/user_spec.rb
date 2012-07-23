@@ -109,4 +109,14 @@ describe User do
     before {@user.password = @user.password_confirmation = "a" * 5}
     it { should be_invalid}
   end
+
+  describe "when email is mixed case" do
+    let(:mixed_case_email) { "FoObAr@GMAIL.com" }
+
+    it "should be all lower case" do
+      @user.email = mixed_case_email
+      @user.save
+      @user.reload.email.should == mixed_case_email.downcase
+    end
+  end  
 end

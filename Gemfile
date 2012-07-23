@@ -27,6 +27,7 @@ gem 'annotate', '~> 2.4.1.beta', group: :development
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '1.4.0'
 end
 
 # Gems used only for assets and not required
